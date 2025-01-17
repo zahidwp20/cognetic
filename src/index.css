@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+  @keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+  }
+}
+
+/* Override wallet button styles to match our theme */
+.wallet-adapter-button {
+  background-color: #FF6B2C !important;
+  color: white !important;
+  padding: 0 24px !important;
+}
+
+.wallet-adapter-button:hover {
+  background-color: #E55A1F !important;
+}
+
+.wallet-adapter-modal-wrapper {
+  background-color: #110936 !important;
+}
+
+/* Remove default wallet button content */
+.wallet-adapter-button-trigger > *:not(.wallet-adapter-button-start-icon) {
+  display: none !important;
+}
