@@ -27,7 +27,7 @@ function App() {
     <div className="min-h-screen bg-[#0A051F] text-white">
       {/* Navigation */}
       <nav className="fixed w-full bg-gray-900/80 lg:bg-transparent backdrop-blur-sm z-50">
-        <div className="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
+        <div className="flex items-center justify-between px-6 lg:px-0 py-4 max-w-7xl mx-auto">
           <div className="flex items-center gap-2">
             <img className="w-32 h-full" src={Navlogo} alt="Nav Logo" />
           </div>
